@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) 
+{
+	int X,Y,Z;
+	cin>>X;
+	cin>>Y;
+	cin>>Z;
+	if(X>Y&&Y<Z)cout<<Y;            //輸出第2小的
+	if(X<Y&&X<Z)cout<<X;
+	if(Z<X&&Z<Y)cout<<Z;
+	if(X>Y&&X>Z&&Y==Z)cout<<Y;      //如果X>Y還有X>Z還有Y=Z 輸出Y
+	if(X<Y&&Y>Z&&X==Z)cout<<X;
+	if(X<Z&&Y<Z&&X==Y)cout<<X;	
+}
